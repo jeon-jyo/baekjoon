@@ -9,5 +9,7 @@ public class java07 {
         String A = sc.next();
 
         System.out.println(A+"??!");
+
+        sc.close();
     }
 }

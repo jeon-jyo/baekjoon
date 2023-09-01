@@ -10,5 +10,7 @@ public class java02 {
         int B = sc.nextInt();
 
         System.out.println(A+B);
+
+        sc.close();
     }
 }

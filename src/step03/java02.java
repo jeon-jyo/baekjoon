@@ -16,7 +16,7 @@ public class java02 {
 
         for (int i = 1; i <= T; i++) {
 
-            st = new StringTokenizer(br.readLine(), " ");
+            st = new StringTokenizer(br.readLine());
 
             int A = Integer.parseInt(st.nextToken());
             int B = Integer.parseInt(st.nextToken());

@@ -17,7 +17,7 @@ public class java04 {
 
         for (int i = 1; i <= N; i++) {
 
-            st = new StringTokenizer(br.readLine(), " ");
+            st = new StringTokenizer(br.readLine());
 
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());

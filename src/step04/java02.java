@@ -3,7 +3,8 @@ package step04;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
@@ -12,24 +13,28 @@ public class java02 {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
+        StringTokenizer st1 = new StringTokenizer(br.readLine());
+        StringTokenizer st2 = new StringTokenizer(br.readLine());
 
-        st = new StringTokenizer(br.readLine(), " ");
+        int N = Integer.parseInt(st1.nextToken());
+        int X = Integer.parseInt(st1.nextToken());
 
-        int A = Integer.parseInt(st.nextToken());
-        int B = Integer.parseInt(st.nextToken());
+        List<Integer> aList = new ArrayList<>();
+        for(int i = 0; i < N; i++) {
+            aList.add(Integer.parseInt(st2.nextToken()));
+        }
 
-        System.out.println(A);
-        System.out.println(B);
-//        int N = Integer.parseInt(st.nextToken());
+        for(int i = 0; i < aList.size(); i++) {
+            if(aList.get(i) < X) {
+                System.out.print(aList.get(i) + " ");
+            }
+        }
+        br.close();
+
 //        int[] A = new int[N];
-//        int X = Integer.parseInt(st.nextToken());
-//
 //        for(int i = 0; i < N; i++) {
-//            A[i] = br.readLine();
+//            A[i] = Integer.parseInt(st2.nextToken());
 //        }
-//
-//        System.out.println(Arrays.toString(A));
 //
 //        for(int i = 0; i < N; i ++) {
 //            if(A[i] < X) {
@@ -39,9 +44,9 @@ public class java02 {
 
 //        Scanner scanner = new Scanner(System.in);
 //        int N = scanner.nextInt();
-//        int[] A = new int[N];
 //        int X = scanner.nextInt();
 //
+//        int[] A = new int[N];
 //        for(int i = 0; i < N; i++) {
 //            A[i] = scanner.nextInt();
 //        }
@@ -51,6 +56,6 @@ public class java02 {
 //                System.out.print(A[i] + " ");
 //            }
 //        }
-
+//        scanner.close();
     }
 }

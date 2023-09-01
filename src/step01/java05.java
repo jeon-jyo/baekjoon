@@ -10,5 +10,7 @@ public class java05 {
         int B = sc.nextInt();
 
         System.out.println((double)A/B);
+
+        sc.close();
     }
 }

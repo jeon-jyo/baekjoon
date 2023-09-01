@@ -14,5 +14,7 @@ public class java09 {
         System.out.println(((A%C)+(B%C))%C);
         System.out.println((A*B)%C);
         System.out.println(((A%C)*(B%C))%C);
+
+        sc.close();
     }
 }

@@ -9,5 +9,7 @@ public class java08 {
         int A = sc.nextInt();
 
         System.out.println(A-543);
+
+        sc.close();
     }
 }

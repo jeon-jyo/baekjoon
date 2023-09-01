@@ -13,5 +13,7 @@ public class java10 {
         System.out.println(A*((B%100)/10));
         System.out.println(A*(B/100));
         System.out.println(A*B);
+
+        sc.close();
     }
 }

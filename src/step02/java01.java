@@ -22,7 +22,6 @@ public class java01 {
         } else if (A == B) {
             System.out.println("==");
         }
-
         // 조건식 ? 참 : 거짓(조건식 ? 참 : 거짓)
         // System.out.println(A > B ? ">" : A < B ? "<" : "==");
 

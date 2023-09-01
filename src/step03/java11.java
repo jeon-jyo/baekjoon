@@ -11,7 +11,7 @@ public class java11 {
         StringTokenizer st;
 
         while (true) {
-            st = new StringTokenizer(br.readLine(), " ");
+            st = new StringTokenizer(br.readLine());
             int A = Integer.parseInt(st.nextToken());
             int B = Integer.parseInt(st.nextToken());
 

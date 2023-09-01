@@ -12,5 +12,6 @@ public class java11 {
 
         System.out.println(A+B+C);
 
+        sc.close();
     }
 }
