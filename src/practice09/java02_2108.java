@@ -15,6 +15,7 @@ package practice09;
 셋째 줄에는 최빈값을 출력한다. 여러 개 있을 때에는 최빈값 중 두 번째로 작은 값을 출력한다.
 넷째 줄에는 범위를 출력한다.
  */
+// 	69880KB	708ms
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -40,7 +41,7 @@ public class java02_2108 {
             arr[i] = num;
             map.put(num,map.getOrDefault(num, 0)+1);
             sum += num;
-            max = Math.max(max, num);
+            max = Math.max(max, map.get(num));
         }
 
         // 평균값
@@ -60,7 +61,7 @@ public class java02_2108 {
         if (pq.size() != 1) {
             pq.poll();
         }
-        mode = pq.peek();   // java.lang.NullPointerException
+        mode = pq.peek();
 
         // 범위
         range = arr[N-1] - arr[0];
