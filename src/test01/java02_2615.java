@@ -1,6 +1,7 @@
 package test01;
 /*
-
+오목
+https://www.acmicpc.net/problem/2615
  */
 import java.io.BufferedReader;
 import java.io.IOException;
