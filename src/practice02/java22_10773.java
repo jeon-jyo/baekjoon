@@ -16,6 +16,7 @@ public class java22_10773 {
         Stack<Integer> stack = new Stack<>();
         for (int i = 0; i < K; i++) {
             int num = Integer.parseInt(br.readLine());
+            // 0 이라면 앞 숫자가 잘못된 것이므로 삭제
             if (!stack.isEmpty() && num == 0) {
                 stack.pop();
             } else {
